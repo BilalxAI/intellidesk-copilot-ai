@@ -1,0 +1,88 @@
+{
+  "HEADSET_ISSUE": [
+    "Check physical connection of headset to device",
+    "Verify headset cable is not damaged",
+    "Try plugging into a different USB/audio port",
+    "Check Device Manager for driver errors",
+    "Update or reinstall audio drivers",
+    "Go to Settings → Sound → Volume and verify device is set as default",
+    "Disable then re-enable the device in Sound settings",
+    "Test headset on another computer to isolate the issue",
+    "Check if headset has a separate power source and ensure it's on",
+    "Uninstall and reinstall the audio device driver"
+  ],
+  "DISPLAY_ISSUE": [
+    "Check if monitor is powered on and cables are secure",
+    "Try pressing Windows key + P to switch display modes",
+    "Check display cable connections (HDMI, DisplayPort, VGA)",
+    "Verify monitor input source is set correctly",
+    "Test with a different cable or port",
+    "Update graphics card drivers",
+    "Check Device Manager for display adapter errors",
+    "Try connecting to a different monitor",
+    "Restart the computer"
+  ],
+  "KEYBOARD_MOUSE_ISSUE": [
+    "Check physical connection of keyboard/mouse to computer",
+    "Try plugging into a different USB port",
+    "Check if wireless receiver is connected",
+    "Check Device Manager for driver errors",
+    "Update or reinstall keyboard/mouse drivers",
+    "Try a different keyboard/mouse to isolate the issue",
+    "Check if Num Lock or Caps Lock is causing issues",
+    "Restart the computer",
+    "Check for hardware damage to cables"
+  ],
+  "NETWORK_ISSUE": [ 
+    "Check the network (Wi-Fi/Ethernet) icon in the taskbar to confirm if you are connected to the internet",
+    "Ensure the Ethernet cable is properly connected; unplug and replug it securely under your desk",
+    "Restart your computer from the Start Menu to refresh the network connection",
+    "Perform a basic network reset by turning off your system, waiting 10–15 seconds, and turning it back on",
+    "If you experience call delays, voice lag, or distortion, it may be due to unstable internet connection",
+    "Press Windows Key + R, type 'cmd', and press Enter to open Command Prompt",
+    "Run 'ipconfig' and check for the IPv4 Address (e.g., 192.168.x.x)",
+    "Copy your IPv4 address and share it with IT support if needed",
+    "Contact IT support if the issue persists after completing all steps"
+    
+   ],
+  "TEAMS_ISSUE": [
+    "Close Microsoft Teams completely (right-click the Teams icon in the taskbar → Quit) and reopen it",
+    "Go to Settings → Apps → Installed Apps → Microsoft Teams → Advanced Options → click 'Repair'",
+    "If the issue persists, click 'Reset' under Advanced Options and reopen Teams",
+    "Uninstall Microsoft Teams, restart your system, then reinstall and sign in again",
+    "Ask external users to join using the same email and sign in or create a Teams account if needed",
+    "Sign out of Teams and sign back in with the correct account",
+    "Contact IT support if the issue persists after completing all steps"
+  ],
+  "OUTLOOK_ISSUE": [
+    "Restart Microsoft Outlook application",
+    "Check email account settings are configured correctly",
+    "Verify internet connection is active",
+    "Update Outlook to the latest version",
+    "Check mailbox quota hasn't been exceeded",
+    "Try removing and re-adding the email account",
+    "Clear Outlook cache by disabling offline mode",
+    "Check if two-factor authentication is blocking access",
+    "Review mailbox rules that might be filtering emails",
+    "Verify password hasn't expired",
+    "Test in Outlook web access (outlook.office.com)"
+  ],
+  
+  "SOFTWARE_INSTALLATION": [
+    "Check system requirements match your device",
+    "Ensure you have admin rights to install software",
+    "Restart computer before attempting installation",
+    "Download the latest installer from official source",
+    "Run installer as Administrator (right-click → Run as admin)",
+    "Check available disk space (minimum 1 GB recommended)",
+    "Disable VPN or proxy that might block downloads",
+    "Contact software vendor support if installation fails"
+  ],
+  "UNKNOWN": [
+    "If this requires admin/security access (for example releasing a blocked/quarantined email, unblocking a sender, resetting MFA/passwords, or granting access), contact IT Support",
+    "Provide the affected account (email/username) and device type (Windows/Mac/mobile)",
+    "Include exact error messages and screenshots if possible",
+    "Include the time the issue happened and whether it affects others",
+    "Contact IT Support with these details for further assistance"
+  ]
+}

@@ -1,0 +1,71 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: it-support-postgres
+    environment:
+      - POSTGRES_DB=it_support
+      - POSTGRES_USER=it_support
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-it_support_password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-lfm
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    volumes:
+      - ollama_data:/root/.ollama
+    command: serve
+    restart: unless-stopped
+
+  assistant:
+    build: .
+    container_name: it-support-assistant
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=LiquidAI/lfm2.5-350m
+      - KB_PATH=/app/kb.json
+      - DATASET_PATH=/app/dataset.jsonl
+      - DATABASE_URL=postgresql://it_support:${POSTGRES_PASSWORD:-it_support_password}@postgres:5432/it_support
+      - API_ROOT_PATH=${API_ROOT_PATH:-}
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+      - LOG_LEVEL=INFO
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    volumes:
+      - ./logs:/app/logs
+      - ./kb.json:/app/kb.json:ro
+      - ./dataset.jsonl:/app/dataset.jsonl:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/ready"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  postgres_data:
+    driver: local
+  ollama_data:
+    driver: local
+
+networks:
+  default:
+    driver: bridge

@@ -1,0 +1,42 @@
+{"text": "my headset is not working", "label": "HEADSET_ISSUE"}
+{"text": "I can't hear anything from my headphones", "label": "HEADSET_ISSUE"}
+{"text": "the audio jack is broken", "label": "HEADSET_ISSUE"}
+{"text": "microphone not detecting my voice", "label": "HEADSET_ISSUE"}
+{"text": "wireless headset keeps disconnecting", "label": "HEADSET_ISSUE"}
+{"text": "my screen is black", "label": "DISPLAY_ISSUE"}
+{"text": "monitor not displaying anything", "label": "DISPLAY_ISSUE"}
+{"text": "display is blank", "label": "DISPLAY_ISSUE"}
+{"text": "screen is flickering", "label": "DISPLAY_ISSUE"}
+{"text": "no display on monitor", "label": "DISPLAY_ISSUE"}
+{"text": "external monitor not working", "label": "DISPLAY_ISSUE"}
+{"text": "keyboard not typing", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "mouse not moving cursor", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "keyboard keys not responding", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "mouse click not working", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "trackpad not working", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "wireless mouse not responding", "label": "KEYBOARD_MOUSE_ISSUE"}
+{"text": "wifi not connecting", "label": "NETWORK_ISSUE"}
+{"text": "internet speed is very slow", "label": "NETWORK_ISSUE"}
+{"text": "can't connect to the network", "label": "NETWORK_ISSUE"}
+{"text": "network adapter is down", "label": "NETWORK_ISSUE"}
+{"text": "ethernet cable problem", "label": "NETWORK_ISSUE"}
+{"text": "Teams keeps crashing", "label": "TEAMS_ISSUE"}
+{"text": "can't start a meeting in Teams", "label": "TEAMS_ISSUE"}
+{"text": "Teams is frozen", "label": "TEAMS_ISSUE"}
+{"text": "microphone not working in Teams", "label": "TEAMS_ISSUE"}
+{"text": "Teams video call is lagging", "label": "TEAMS_ISSUE"}
+{"text": "Outlook emails are not syncing", "label": "OUTLOOK_ISSUE"}
+{"text": "can't send emails", "label": "OUTLOOK_ISSUE"}
+{"text": "Outlook is running slow", "label": "OUTLOOK_ISSUE"}
+{"text": "inbox not updating", "label": "OUTLOOK_ISSUE"}
+{"text": "calendar not showing events", "label": "OUTLOOK_ISSUE"}
+{"text": "printer offline", "label": "HARDWARE_ISSUE"}
+{"text": "external hard drive not recognized", "label": "HARDWARE_ISSUE"}
+{"text": "usb device not detected", "label": "HARDWARE_ISSUE"}
+{"text": "need to install Adobe", "label": "SOFTWARE_INSTALLATION"}
+{"text": "how do I install Microsoft Office", "label": "SOFTWARE_INSTALLATION"}
+{"text": "software installation failed", "label": "SOFTWARE_INSTALLATION"}
+{"text": "can't download the installer", "label": "SOFTWARE_INSTALLATION"}
+{"text": "application won't install on my computer", "label": "SOFTWARE_INSTALLATION"}
+{"text": "Need assistance with my headgears. Facing some voice issues", "label": "HEADSET_ISSUE"}
+

@@ -1,0 +1,9 @@
+[
+  {"id": "tech-1", "name": "Mark Saleem", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-2", "name": "Max Hassan", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-3", "name": "Ahsan-ul-Haq", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-4", "name": "Osama Arshad", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-5", "name": "Saqlain Ali", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-6", "name": "Asher Basit", "aad_object_id": "", "skills": [], "capacity": 3},
+  {"id": "tech-7", "name": "Yosef Munir", "aad_object_id": "", "skills": [], "capacity": 3}
+]
