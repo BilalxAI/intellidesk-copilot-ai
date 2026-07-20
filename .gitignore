@@ -1,0 +1,45 @@
+# Model caches and large files
+*.bin
+*.pt
+*.pth
+models/
+faiss_index.bin
+lora_adapter/
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (keep KB, but ignore large embeddings)
+embeddings/
+*.pickle
+
+# Cache
+.cache/
+huggingface_cache/
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Environment files
+.env
+.env.local
